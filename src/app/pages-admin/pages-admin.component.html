@@ -1,0 +1,35 @@
+<div class="container-scroller">
+  <!-- navbar  -->
+  <app-navbar-admi></app-navbar-admi>
+  <!-- navbar  -->
+
+  <div class="container-fluid page-body-wrapper">
+    <!-- sidebar -->
+    <app-sidebar></app-sidebar>
+    <!-- sidebar -->
+
+    <!-- Panel -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="home-tab">
+              <!-- menu  -->
+              <app-menu></app-menu>
+              <!-- menu  -->
+              <div class="tab-content tab-content-basic">
+                <!-- rutas  -->
+                <router-outlet></router-outlet>
+                <!-- rutas  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <app-footer-admi></app-footer-admi>
+      <!-- partial -->
+    </div>
+  </div>
+</div>

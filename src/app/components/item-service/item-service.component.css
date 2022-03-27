@@ -1,0 +1,50 @@
+.container {
+  margin: 25px 25px;
+  background: white;
+  padding: 50px;
+  text-align: center;
+}
+.container h4 {
+  margin: 10px;
+  font-size: 30px;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items > .item:nth-child(1) {
+  background: rgba(3, 32, 77, 0.835);
+}
+.items > .item:nth-child(2) {
+  background: rgba(97, 4, 77, 0.829);
+}
+.items > .item:nth-child(3) {
+  background: rgba(21, 73, 9, 0.787);
+}
+.item {
+  margin: 50px;
+  padding: 50px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.item img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -20px;
+}
+.title_service img {
+  width: 100px;
+  height: 100px;
+}
+.title_service {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.service {
+  margin: 15px;
+}

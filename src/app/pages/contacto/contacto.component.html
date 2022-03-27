@@ -1,0 +1,119 @@
+<div class="containerl">
+  <div class="gif animate__animated animate__fadeIn">
+    <img src="../../../assets/imagens/animacionInicio.svg" alt="" />
+    <h4>Contactame.<span>&nbsp;</span></h4>
+  </div>
+  <div class="formulario">
+    <form [formGroup]="formContacto" (submit)="enviar()" class="form">
+      <div class="campos animate__animated animate__pulse">
+        <div class="campo">
+          <label for="nombres">Nombres</label>
+          <input
+            formControlName="nombres"
+            type="text"
+            name="nombres"
+            placeholder="Esbribe tus nombres"
+            id="nombres"
+            required
+          />
+          <div
+            class="alerta_mensaje"
+            *ngIf="nombres?.invalid && (nombres?.dirty || nombres?.touched)"
+          >
+            <h6>
+              <i class="fas fa-hand-point-right"></i>Este campo es obligatorio
+            </h6>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="">Apellidos</label>
+          <input
+            formControlName="apellidos"
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Esbribe tus apellidos"
+            required
+          />
+          <div
+            class="alerta_mensaje"
+            *ngIf="
+              apellidos?.invalid && (apellidos?.dirty || apellidos?.touched)
+            "
+          >
+            <h6>
+              <i class="fas fa-hand-point-right"></i>Este campo es obligatorio
+            </h6>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="">Correo</label>
+          <input
+            formControlName="correo"
+            type="text"
+            name="correo"
+            id="correo"
+            placeholder="Esbribe  tu correo"
+            required
+          />
+          <div
+            class="alerta_mensaje"
+            *ngIf="correo?.invalid && (correo?.dirty || correo?.touched)"
+          >
+            <h6>
+              <i class="fas fa-hand-point-right"></i>Este campo es obligatorio,
+              debe ser valido
+            </h6>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="">Celular</label>
+          <input
+            formControlName="celular"
+            type="text"
+            name="celular"
+            id="celular"
+            placeholder="Esbribe tu celular"
+            required
+          />
+          <div
+            class="alerta_mensaje"
+            *ngIf="celular?.invalid && (celular?.dirty || celular?.touched)"
+          >
+            <h6>
+              <i class="fas fa-hand-point-right"></i>No se permiten letras, Este
+              campo es obligatorio
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="mensaje animate__animated animate__pulse">
+        <label for="mensaje">Mensaje</label>
+        <input
+          formControlName="mensaje"
+          type="text"
+          name="mensaje"
+          id="mensaje"
+          placeholder="Escribe tu mensaje"
+          required
+        />
+        <div
+          class="alerta_mensaje"
+          *ngIf="mensaje?.invalid && (mensaje?.dirty || mensaje?.touched)"
+        >
+          <h6>
+            <i class="fas fa-hand-point-right"></i>Este campo es obligatorio
+          </h6>
+        </div>
+      </div>
+      <div class="contactar">
+        <div class="correo animate__animated animate__heartBeat">
+          <i class="far fa-envelope"></i>
+          <label for="">niverdromero12@gmail.com</label>
+        </div>
+        <button [disabled]="formContacto.invalid">Enviar mensaje</button>
+      </div>
+    </form>
+  </div>
+</div>

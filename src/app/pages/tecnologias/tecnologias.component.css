@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 400px;
+}
+
+.gif img {
+  height: 100%;
+  background: chartreuse;
+}
+
+.tecnologias {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.tecnologia {
+  position: relative;
+}
+
+.tecnologia p {
+  width: 78%;
+  left: 0;
+  position: absolute;
+  bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.tecnologia img {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  /* background: chartreuse; */
+  /* border: 2px solid black; */
+}

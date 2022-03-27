@@ -1,0 +1,54 @@
+<div class="container">
+  <h1>NDRM</h1>
+  <div class="login">
+    <div class="formulario">
+      <h3>Login NDRM</h3>
+      <form [formGroup]="formLogin" (submit)="entrar()" action="">
+        <div class="campo">
+          <label for="C">correo</label>
+          <input
+            formControlName="correo"
+            type="email"
+            placeholder="Introduzca su correo"
+            name="correo"
+            id="correo"
+          />
+          <div class="alerta">
+            <p *ngIf="correo?.invalid && (correo?.dirty || correo?.touched)">
+              <i class="fas fa-hand-point-right"></i> El correo no es valido
+            </p>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="">Contraseña</label>
+          <input
+            formControlName="clave"
+            type="password"
+            placeholder="Introduzca su Contraseña"
+            name="clave"
+            id="clave"
+          />
+          <div class="alerta">
+            <p *ngIf="correo?.invalid && (correo?.dirty || correo?.touched)">
+              <i class="fas fa-hand-point-right"></i> Minimo son 4 caracteres
+            </p>
+          </div>
+        </div>
+        <div class="alerta">
+          <p *ngIf="mensaje">
+            <i class="fas fa-hand-point-right"></i> {{ mensaje }}
+          </p>
+        </div>
+        <a href="">Recuperar contraseña ?</a>
+        <button [disabled]="formLogin.invalid">
+          Entrar <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="descripcion">
+      <h3>NDRM</h3>
+      <p>Ingresa para agregar, actulizar y eliminar informaciòn</p>
+    </div>
+  </div>
+</div>

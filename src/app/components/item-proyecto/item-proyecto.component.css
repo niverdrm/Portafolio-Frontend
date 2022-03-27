@@ -1,0 +1,97 @@
+.card {
+  padding: 10px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.75);
+}
+
+.foto {
+  position: relative;
+}
+
+.foto img {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 30px;
+  -webkit-box-shadow: -1px 9px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 9px 15px 0px rgba(0, 0, 0, 0.096);
+}
+
+.git {
+  position: absolute;
+  text-align: right;
+  bottom: 25px;
+  right: 0px;
+  border-radius: 10px;
+}
+
+.git a {
+  border-radius: 5px;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  background: var(--red-primary);
+  font-size: 12px;
+  font-weight: bolder;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.git a i {
+  font-size: 12px;
+  padding: 0px 2px;
+}
+
+h3 {
+  padding: 0px 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--red-primary);
+}
+
+.descripcion p {
+  width: 100%;
+  padding: 5px;
+  text-align: justify;
+}
+
+.descripcion {
+  position: relative;
+}
+
+.ver {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tecnologias i {
+  text-align: center;
+  padding: 2px;
+  margin: 5px;
+  border: 1px solid black;
+  background: gray;
+  border-radius: 5px;
+  color: white;
+}
+
+.ver a {
+  text-decoration: none;
+  text-align: center;
+  width: 70%;
+  padding: 10px 20px;
+  background: var(--red-primary);
+  border-radius: 20px;
+  margin: 10px 0px;
+  color: white;
+  font-size: 18px;
+}

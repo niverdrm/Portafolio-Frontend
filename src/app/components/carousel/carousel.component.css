@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  width: 400px;
+  height: 400px;
+  background-image: url("../../../assets/imagens/niver.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: contain;
+}
+
+.tech_wrapper {
+  background: rgb(236, 236, 236);
+  padding: 16px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 50px;
+  left: -30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.tech_wrapper::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  width: 40%;
+  height: 5px;
+  border-radius: 25px;
+  background: orange;
+}
+
+.tech_wrapper::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 28px;
+  width: 50%;
+  height: 5px;
+  border-radius: 25px;
+  background: #dd1b16;
+}
+
+.tech_wrapper > span {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  background: orange;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+}
+
+.my_technologies {
+  display: flex;
+  margin: 24px 12px 4px 20px;
+  padding-left: 8px;
+}
+
+.my_technologies > span {
+  border-radius: 50%;
+  padding: 12px;
+  color: white;
+  margin-left: -6px;
+  cursor: pointer;
+}
+
+.my_technologies > span:hover {
+  filter: brightness(0.9);
+}
+
+.my_technologies > span:nth-child(1) {
+  background: #ff5733;
+}
+
+.my_technologies > span:nth-child(2) {
+  background: #1c84bc;
+}
+
+.my_technologies > span:nth-child(3) {
+  background: #f0db4f;
+}
+
+.my_technologies > span:nth-child(4) {
+  background: #c3002f;
+}
+
+.my_technologies > span:nth-child(5) {
+  background: #3c873a;
+}

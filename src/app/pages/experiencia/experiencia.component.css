@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+}
+.informacion {
+  text-align: center;
+  width: 50%;
+  height: 20%;
+}
+.informacion h1 {
+  font-size: 22px;
+  font-size: bold;
+  margin: 10px;
+}
+.informacion p {
+  text-align: left;
+  padding: 20px;
+}
+
+.gif {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.gif img {
+  width: 60%;
+  height: 100%;
+}

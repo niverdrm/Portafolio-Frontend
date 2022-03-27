@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  margin: 30px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.gif {
+  width: 50%;
+}
+
+img {
+  width: 50%;
+}
+.biografia {
+  text-align: justify;
+  width: 50%;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--red-primary);
+}

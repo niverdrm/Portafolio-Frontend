@@ -1,0 +1,118 @@
+.containerl {
+  display: flex;
+}
+
+.gif {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.formulario {
+  width: 60%;
+  padding: 10px 70px;
+}
+
+.campos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--red-primary);
+}
+.mensaje {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.correo i {
+  color: var(--red-primary);
+  font-size: 22px;
+  padding: 0px 10px;
+}
+.correo {
+  display: flex;
+  align-items: center;
+}
+.correo label i {
+  font-size: 16px;
+}
+
+button {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.gif h4 {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  bottom: 20%;
+  left: 10%;
+  float: left;
+  padding: 20px;
+  color: var(--red-primary);
+}
+
+.gif h4 span {
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 2px solid #d3313a;
+  animation: escritura 5s infinite alternate steps(32);
+}
+
+@keyframes escritura {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+#hola {
+  background: cornflowerblue;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.alerta_mensaje h6 {
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+.alerta_mensaje h6 i {
+  padding: 0px 10px;
+  text-align: center;
+  color: var(--red-primary);
+}

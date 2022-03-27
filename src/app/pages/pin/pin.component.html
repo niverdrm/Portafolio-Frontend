@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="cerrar"></div>
+  <div class="logo">
+    <img src="../../../assets/imagens/logoNdrm.png" alt="" />
+    <i class="fas fa-power-off" (click)="cerrar()"></i>
+  </div>
+  <div class="contenido">
+    <h2>Ingrese el pin de seguridad</h2>
+    <form action="">
+      <div class="pin">
+        <input
+          class="inputL"
+          id="pin1"
+          name="pin1"
+          type="password"
+          minlength="1"
+          maxlength="1"
+          size="1"
+          [(ngModel)]="pin1"
+          onkeyup="if (this.value.length == this.getAttribute('maxlength')) { if (event.keyCode!=9) { getElementById('pin2').focus(); } }"
+        />
+        <input
+          id="pin2"
+          name="pin2"
+          type="password"
+          minlength="1"
+          maxlength="1"
+          size="1"
+          [(ngModel)]="pin2"
+          onkeyup="if (this.value.length == this.getAttribute('maxlength')) { if (event.keyCode!=9) { getElementById('pin3').focus(); } }"
+        />
+
+        <input
+          id="pin3"
+          name="pin3"
+          type="password"
+          minlength="1"
+          maxlength="1"
+          size="1"
+          [(ngModel)]="pin3"
+          onkeyup="if (this.value.length == this.getAttribute('maxlength')) { if (event.keyCode!=9) { getElementById('pin4').focus(); (click)='validarPin()'} }"
+        />
+        <input
+          id="pin4"
+          name="pin4"
+          type="password"
+          minlength="1"
+          maxlength="1"
+          size="1"
+          [(ngModel)]="pin4"
+          (ngModelChange)="onChange($event)"
+        />
+        <div *ngIf="mensaje" class="mensaje">
+          <p>Pin es incorrecto</p>
+        </div>
+        <h3>cambiar pin ?</h3>
+      </div>
+    </form>
+  </div>
+</div>

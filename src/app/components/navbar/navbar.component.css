@@ -1,0 +1,66 @@
+.containerl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-start-start-radius: 40px;
+  border-start-end-radius: 40px;
+  position: relative;
+  padding: 40px;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+}
+
+.page {
+  padding: 10px;
+}
+
+.page a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.page a:visited {
+  color: unset;
+}
+
+.page a:hover {
+  color: var(--red-primary);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--red-primary) !important;
+}
+
+.logo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 175px;
+  top: -30px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login {
+  position: absolute;
+  right: 100px;
+}
+
+.login i {
+  padding: 10px;
+}
+.login i:hover {
+  color: azure;
+  border-radius: 50%;
+  background: rgb(243, 69, 69);
+  cursor: pointer;
+}

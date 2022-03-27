@@ -1,0 +1,15 @@
+body {
+}
+.container {
+  margin: 0px 25;
+  height: 40px;
+  border-top: 1px solid gray;
+  border-end-start-radius: 20px;
+  border-end-end-radius: 20px;
+  text-align: center;
+}
+p {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
